@@ -1,6 +1,163 @@
+<!doctype html>
 <html>
-<header><title>Yuchen Li's Website</title></header>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta charset="utf-8">
+<title>Yuchen Li</title>
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
 <body>
-Under Construction...
+
+
+<div class="container">
+    <ul class="nav nav-tabs">
+		<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+		<li><a data-toggle="tab" href="#research">Research</a></li>
+		<li><a data-toggle="tab" href="#publications">Publications</a></li>
+    </ul>
+	<div class="tab-content">
+		<div id="home" class="tab-pane fade in active">
+			<div class="row">
+				<div class="col-sm-4">
+					<img src="profile.jpg" alt="Professor Image" width="300" height="360"/>
+					<h3>Contact Info:</h3>
+					<p>Email: <a href="mailto:yuchenli@smu.edu.sg">yuchenli AT smu DOT edu.sg</a>
+					<br />4041, School of Information System, 
+					<br /> 80 Stamford Rd, Singapore 178902
+					<br /> Phone: +(65) 68289614
+					</p>
+				</div>
+				
+				<div class="col-sm-8">
+					<h2> Yuchen Li </h2>
+					<h4> Assistant Professor <h4>
+					<p class="text-justify">
+						<a href="https://sis.smu.edu.sg">School of Information System (SIS)</a><br />
+						<a href="https://www.smu.edu.sg">Singapore Management University (SMU)</a>
+					</p>
+				
+					<h2>Short Bio</h2>
+					<p class="text-justify">Yuchen is an Assistant Professor in the School of Information System (SIS) at the Singapore Management University (SMU). Before joining SMU, he was a research fellow at the National University of Singapore (NUS). He received the double B.Sc. degrees in Applied Math and computer science (both degrees with first class honors) and the P.h.D degree in computer science from NUS, in 2013 and 2016, respectively. His major research interests are social analytics and high performance graph mining. </p>
+					
+					<h2>Recent News</h2>
+					<table class="table-striped">
+					<tr><td><li>
+						<span class="badge badge-success" style="background-color:red;">HOT</span> 
+						<i class="icon-group"></i> I am actively looking for motivated and talented Ph.D. students to work with me on <i>large scale graph processing on GPUs</i> and <i>social network analysis</i>. If you are interested, please find information on the <a href="https://sis.smu.edu.sg">SIS PhD Program</a> and send an email to me.
+					</li></td></tr>
+					<tr><td><li>
+						<span class="badge badge-success" style="background-color:green;">NEW</span> 
+						Two papers accepted at ICDE 2018: "A Sliding-Window Framework for Representative Subset Selection" (short) and "OCTOPUS: An Online Topic-Aware Influence Analysis System for Social Networks" (demo).
+					</li></td></tr>
+					<tr><td><li>
+						I joined SMU as an assistant professor, starting from Jan 2018.
+					</li></td></tr>
+					<tr><td><li>
+						Two papers accepted at VLDB 2018: "Accelerating Dynamic Graph Analytics on GPUs" and "Parallel Personalized Pagerank on Dynamic Graphs".
+					</li></td></tr>
+					<tr><td>
+					</td></tr>
+					</table>
+				</div>
+			</div>
+		</div>
+		<div id="research" class="tab-pane fade">
+			<br />
+			<div class="row">
+				<div class="col-sm-8">
+					<h3> Large Scale Graph Processing on GPUs.</h3>
+					<p>
+						Graphs are powerful structures to represent complex dependencies in the data. Large scale graph processing remains a fundamental challenge, due to its compute-intensive as well as data-intensive nature. There are emerging interests in adopting massively parallel GPUs to speedup graph processing. Nevertheless, existing GPU solutions focus on static, homogeneous graphs and simple graph algorithms, e.g., BFS, shortest path, connected components and etc. In this project, we explore using GPUs for more complex processing tasks (e.g., motif discovery and deep learning on graphs), with emphasis on heterogeneous and dynamic graphs.
+					</p>
+				</div>
+				<div class="col-sm-4">
+					<img src="graph.jpg" alt="Graph" width="300" height="200"/>
+				</div>
+			</div>
+			<br />
+			<div class="row">
+				<div class="col-sm-8">
+					<h3> Fact Checking on Social Media Streams.</h3>
+					<p>
+						Massive amount of information have been continuously social media stream. Misinformation posted in social media messages lead to undesirable consequences and can be very difficult to correct since people make casual inferences based on available information about a given event or outcome. A computational fact-checking engine is much needed to identify false statements. 
+						Existing approaches either uses knowledge graph to semantically fact-check statements but suffers from performance issue, or completely ignores the semantic meaning and solely focus on viral patterns to determine problematic statements. In this project, we are planning to develop an efficient engine on top of the knowledge graph to fact-check the massive social media streams.  
+					</p>
+				</div>
+				<div class="col-sm-4">
+					<br />
+					<img src="fact.jpg" alt="Graph" width="300" height="150"/>
+				</div>
+			</div>
+		</div>
+		<div id="publications" class="tab-pane fade">
+			<h3> Conference Publications </h3>
+			<table class="table table-striped">
+				<tr><td>
+					Yanhao Wang, <strong>Yuchen Li</strong>, Kian-Lee Tan. 
+					<br><strong>A Sliding-Window Framework for Representative Subset Selection (short).</strong>
+					<br>IEEE International Conference on Data Engineering (<strong>ICDE</strong>), 2018, to appear.
+				</td></tr>
+				<tr><td>
+					Ju Fan, Jiarong Qiu, <strong>Yuchen Li</strong>, Qingfei Meng, Dongxiang Zhang, Guoliang Li, Kian-Lee Tan, Xiaoyong Du. 
+					<br><strong>OCTOPUS: An Online Topic-Aware Influence Analysis System for Social Networks (demo).</strong>
+					<br>IEEE International Conference on Data Engineering (<strong>ICDE</strong>), 2018, to appear.
+				</td></tr>
+				<tr><td>
+					Wentian Guo, <strong>Yuchen Li</strong>, Mo Sha, Kian-Lee Tan. 
+					<br><strong>Parallel Personalized PageRank on Dynamic Graphs.</strong>
+					<br>International Conference on Very Large Data Bases (<strong>VLDB</strong>), 2018, to appear. 
+				</td></tr>
+				<tr><td>
+					Mo Sha, <strong>Yuchen Li</strong>, Bingsheng He, Kian-Lee Tan. 
+					<br><strong>Accelerating Dynamic Graph Analytics on GPUs.</strong>
+					<br>International Conference on Very Large Data Bases (<strong>VLDB</strong>), 2018, to appear. 
+				</td></tr>
+				<tr><td>
+					<strong>Yuchen Li</strong>, Ju Fan, Dongxiang Zhang, Kian-Lee Tan. 
+					<br><strong>Discovering Your Selling Points: Personalized Social Influential Tags Exploration.</strong>
+					<br>ACM SIGMOD Conference on Management of Data (<strong>SIGMOD</strong>), 2017.
+				</td></tr>
+				<tr><td>
+					Yanhao Wang, Qi Fan, <strong>Yuchen Li</strong>, Kian-Lee Tan. 
+					<br><strong>Influence Maximization on Dynamic Social Streams.</strong>
+					<br>International Conference on Very Large Data Bases (<strong>VLDB</strong>), 2017.
+				</td></tr>	
+				<tr><td>
+					<strong>Yuchen Li</strong>, Dongxiang Zhang, Ziquan Lan, Kian-Lee Tan. 
+					<br><strong>Context-Aware Advertisement Recommendation for High-Speed Social News Feeding.</strong>
+					<br>IEEE International Conference on Data Engineering (<strong>ICDE</strong>), 2016.
+				</td></tr>
+				<tr><td>
+					<strong>Yuchen Li</strong>, Dongxiang Zhang, Kian-Lee Tan. 
+					<br><strong>Real Time Targeted Influence Maximization for Online Advertisements.</strong>
+					<br> International Conference on Very Large Data Bases (<strong>VLDB</strong>), 2015
+				</td></tr>
+				<tr><td>
+					<strong>Yuchen Li</strong>, Zhifeng Bao, Guoliang Li, Kian-Lee Tan.  
+					<br><strong>Real Time Personalized Search on Social Networks. </strong>
+					<br>IEEE International Conference on Data Engineering (<strong>ICDE</strong>), 2015. 
+				</td></tr>
+			</table>
+			
+			<h3> Journal Publications </h3>
+			<table class="table table-striped">
+				<tr><td>
+					Qi Fan, <strong>Yuchen Li</strong>, Dongxiang Zhang, Kian-Lee Tan. 
+					<br><strong>Discovering Newsworthy Themes From Sequenced Data: A Step Towards Computational Journalism.</strong>
+					<br>IEEE Transactions on Knowledge and Data Engineering (<strong>TKDE</strong>), 2017.
+				</td></tr>
+				<tr><td>
+					Dongxiang Zhang, <strong>Yuchen Li</strong>, Ju Fan, Lianli Gao, Fumin Shen, Heng Tao Shen. 
+					<br><strong>Processing Long Queries Against Short Text: Top-k Advertisement Matching in News Stream Applications.</strong>
+					<br>ACM Transactions on Information Systems (<strong>TOIS</strong>), 2017.
+				</td></tr>
+			</table>
+		</div>
+    </div>
+
+</div>
 </body>
 </html>
