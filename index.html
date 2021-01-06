@@ -369,6 +369,16 @@
 					<br>IEEE International Conference on Data Engineering (<strong>ICDE</strong>), 2015. 
 				</td></tr>
 			</table>
+			<script>
+				var tables = document.getElementsByTagName('table');
+				var table = tables[tables.length - 1];
+				var rows = table.rows;
+				for(var i = 0, td; i < rows.length; i++){
+					td = document.createElement('td');
+					td.appendChild(document.createTextNode(i + 1));
+					rows[i].insertBefore(td, rows[i].firstChild);
+				}
+			</script>
 			
 			<h3> Journal Publications </h3>
 			<table class="table table-striped">
@@ -418,6 +428,16 @@
 					<br>ACM Transactions on Information Systems (<strong>TOIS</strong>), 2017.
 				</td></tr>
 			</table>
+			<script>
+				var tables = document.getElementsByTagName('table');
+				var table = tables[tables.length - 1];
+				var rows = table.rows;
+				for(var i = 0, td; i < rows.length; i++){
+					td = document.createElement('td');
+					td.appendChild(document.createTextNode(i + 1));
+					rows[i].insertBefore(td, rows[i].firstChild);
+				}
+			</script>
 			
 			<h3> Demos </h3>
 			<table class="table table-striped">
@@ -442,7 +462,17 @@
 					<br>IEEE International Conference on Data Engineering (<strong>ICDE</strong>), 2018.
 				</td></tr>
 			</table>
-<!--
+			<script>
+				var tables = document.getElementsByTagName('table');
+				var table = tables[tables.length - 1];
+				var rows = table.rows;
+				for(var i = 0, td; i < rows.length; i++){
+					td = document.createElement('td');
+					td.appendChild(document.createTextNode(i + 1));
+					rows[i].insertBefore(td, rows[i].firstChild);
+				}
+			</script>
+<!--		
 			<h3> Technical Reports </h3>
 			<table class="table table-striped">
 				<tr><td>
